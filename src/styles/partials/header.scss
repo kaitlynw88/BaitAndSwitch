@@ -1,0 +1,42 @@
+.navigation{
+    // border:2px solid red;
+    .wrapper{
+        display:flex;
+        justify-content: flex-end;
+        .navigationBar{
+            display: flex;
+            align-items: center;
+            ul{
+                display:flex;
+                width: 500px;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    border-bottom: 2px solid #E0E2DB;
+                    transition: 0.3s;
+                    a{
+                        color: #38413f;
+                        font-size:1.25rem;
+                    }
+                    &:hover, &:focus{
+                        border-bottom: 2px solid #38413f;
+                    }
+
+                }
+            }
+        }
+    }
+    .navButton{
+        display:none;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:900px){
+    .navigation{
+
+        .navButton{
+            display:inline-block;
+        }
+    }
+}
