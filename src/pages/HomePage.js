@@ -56,40 +56,40 @@ function HomePage() {
                   <h2>Come meet with us!</h2>
                   <div className="grid-wrapper">
                       <div className="big">
-                          <img src={img2} alt="image" />
+                          <img src={img2} alt="name" />
                       </div>
                       <div className="tall">
-                          <img src={img1} alt="image" />
+                          <img src={img1} alt="name" />
                       </div>
                       <div>
-                          <img src={img5} alt="image" />
+                          <img src={img5} alt="name" />
                       </div>
                       <div>
-                          <img src={img4} alt="image" />
+                          <img src={img4} alt="name" />
                       </div>
                       <div className="big">
-                          <img src={img3} alt="image" />
+                          <img src={img3} alt="name" />
                       </div>
                       <div className="tall">
-                          <img src={img2} alt="image" />
+                          <img src={img2} alt="name" />
                       </div>
                       <div className="wide">
-                          <img src={img5} alt="image" />
+                          <img src={img5} alt="name" />
                       </div>
                       <div className="big">
-                          <img src={img5} alt="image" />
+                          <img src={img5} alt="name" />
                       </div>
                       <div>
-                          <img src={img4} alt="image" />
+                          <img src={img4} alt="name" />
                       </div>
                       <div className="tall">
-                          <img src={img1} alt="image" />
+                          <img src={img1} alt="name" />
                       </div>
                       <div className="big">
-                          <img src={img5} alt="image" />
+                          <img src={img5} alt="name" />
                       </div>
                       <div>
-                          <img src={img2} alt="image" />
+                          <img src={img2} alt="name" />
                       </div>
                   </div>
               </div>
