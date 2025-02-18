@@ -4,9 +4,6 @@ import img1 from "../../assets/OASIA/Cast/DSC_0013.JPG"
 import img2 from "../../assets/OASIA/Cast/DSC_0021.JPG";
 import img3 from "../../assets/OASIA/Cast/DSC_0051.JPG";
 
-
-// src/assets/OASIA/Cast/DSC_0013.JPG src/assets/OASIA/Cast/DSC_0021.JPG src/assets/OASIA/Cast/DSC_0051.JPG
-
 function OnASunday() {
   return (
       <div className="OnASunday">
@@ -82,9 +79,9 @@ function OnASunday() {
           </div>
           <section>
             <h2 className="titl">Professional shots</h2>
-              <img src={img1} alt="" />
-              <img src={img2} alt="" />
-              <img src={img3} alt="" />
+              <img src={img1} alt="image 1" />
+              <img src={img2} alt="image 2" />
+              <img src={img3} alt="image 3" />
           </section>
       </div>
   );
