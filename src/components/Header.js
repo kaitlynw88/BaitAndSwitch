@@ -24,7 +24,7 @@ function Header() {
                           <Link to="/on-a-sunday-in-august">Our Shows</Link>
                       </li>
                       <li>
-                          <a href="">
+                          <a href="https://www.instagram.com/fringeoasia/">
                               <span className="sr-only">Instagram</span>
                               <FontAwesomeIcon
                                   icon={faInstagram}
