@@ -12,7 +12,7 @@ function HomePage() {
               <div className="wrapper">
                   <div className="hero">
                       <div className="heroTitle">
-                          <h1>Bait and Switch</h1>
+                          <h1 className='title'>Bait and Switch</h1>
                           <div className="formContainer">
                               <h3>Get in touch</h3>
                               <form action="">

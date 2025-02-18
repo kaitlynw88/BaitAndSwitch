@@ -2,11 +2,11 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+    <footer>
       <p>
         Bait and Switch 2025
       </p>
-    </div>
+    </footer>
   )
 }
 

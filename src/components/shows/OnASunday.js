@@ -81,6 +81,7 @@ function OnASunday() {
               </section>
           </div>
           <section>
+            <h2 className="titl">Professional shots</h2>
               <img src={img1} alt="" />
               <img src={img2} alt="" />
               <img src={img3} alt="" />

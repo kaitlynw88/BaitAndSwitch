@@ -10,7 +10,7 @@ function Header() {
         setClicked(!clicked)
     }
   return (
-      <div className="navigation">
+      <header className="navigation">
           <div className="wrapper">
               <nav className="navigationBar">
                   <ul>
@@ -56,7 +56,7 @@ function Header() {
                   </div>
               </nav>
           </div>
-      </div>
+      </header>
   );
 }
 
