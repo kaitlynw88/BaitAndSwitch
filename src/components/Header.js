@@ -34,7 +34,7 @@ function Header() {
                       </li>
                   </ul>
                   <div className="navButtonContainer">
-                      <a className="navButton">
+                      <div className="navButton">
                           {clicked ? (
                               <>
                                   <span className="sr-only">X Mark</span>
@@ -52,7 +52,7 @@ function Header() {
                                   />
                               </>
                           )}
-                      </a>
+                      </div>
                   </div>
               </nav>
           </div>
