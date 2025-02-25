@@ -14,14 +14,9 @@
     }
     .imageContainer{
         display: flex;
-        .image {
+        .headshot-image {
                 width: 200px;
                 height: 200px;
-                background-color: red;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 1.4rem;
             }
         p{
             text-wrap: wrap;

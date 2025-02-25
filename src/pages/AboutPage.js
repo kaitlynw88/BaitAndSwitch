@@ -1,4 +1,5 @@
 import React from 'react'
+import Olivia from "../assets/headshots/OliviaQuinn-Smith.jpg"
 
 function AboutPage() {
   return (
@@ -9,8 +10,8 @@ function AboutPage() {
                   <div className="aboutContainer">
                       <h3>Olivia Quinn Smith</h3>
                       <div className="imageContainer">
-                          <div className="image">
-                              <em>Placeholder for photo</em>
+                          <div className="headshot-image">
+                              <img src={Olivia} alt="Olivia Quinn-Smith" />
                           </div>
                           <p>
                               <em>Playwright, Producer.</em> After touring
