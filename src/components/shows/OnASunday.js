@@ -1,5 +1,8 @@
 import React from 'react'
 import castPic from "../../assets/OASIA/Cast/ChloeChanPic.JPG"
+import JosephBrown from "../../assets/headshots/JosephBrown.jpg"
+import Eli from "../../assets/headshots/Eli.jpg"
+import Cayne from "../../assets/headshots/Cayne.jpg";
 import img1 from "../../assets/OASIA/Cast/DSC_0013.JPG"
 import img2 from "../../assets/OASIA/Cast/DSC_0021.JPG";
 import img3 from "../../assets/OASIA/Cast/DSC_0051.JPG";
@@ -54,7 +57,7 @@ function OnASunday() {
                   <div className="castMembers">
                       <h4>Cayne Kitagawa</h4>
                       <div className="castInfo">
-                          <img src={castPic} alt="Chloe Chan" />
+                          <img src={Cayne} alt="Cayne Kitagawa" />
                           <p className="Bio">
                               Born in Ottawa of Ukrainian and Japanese heritage,
                               Cayne Kitagawa is dedicated to performance,
@@ -80,7 +83,7 @@ function OnASunday() {
                   <div className="castMembers">
                       <h4>Eli-Bella Wood</h4>
                       <div className="castInfo">
-                          <img src={castPic} alt="Chloe Chan" />
+                          <img src={Eli} alt="Eli-Bella Wood" />
                           <p className="Bio">
                               Eli-Bella Wood (Shelby) is delighted to join the
                               cast of On a Sunday in August. She regularly
@@ -94,7 +97,7 @@ function OnASunday() {
                   <div className="castMembers">
                       <h4>Joseph Brown</h4>
                       <div className="castInfo">
-                          <img src={castPic} alt="Chloe Chan" />
+                          <img src={JosephBrown} alt="Joseph Brown" />
                           <p className="Bio">
                               Joseph (he/him) is a dynamic Actor and
                               Collaborator bringing a wealth of theatrical
