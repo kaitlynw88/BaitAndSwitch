@@ -6,9 +6,14 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 function Header() {
     const [clicked, setClicked] = useState()
+    const [dropdown, setDropdown] = useState();
     const handleClick =()=>{
         setClicked(!clicked)
     }
+
+    const handleDropdown = () => {
+        setDropdown(!dropdown);
+    };
   return (
       <header className="navigation">
           <div className="wrapper">
@@ -20,8 +25,21 @@ function Header() {
                       <li>
                           <Link to="/about">About</Link>
                       </li>
-                      <li>
-                          <Link to="/on-a-sunday-in-august">Our Shows</Link>
+                      <li
+                          className="dropdownContainer"
+                          onClick={handleDropdown}
+                      >
+                          Our Shows
+                          {dropdown ? (
+                              <ul className="dropdown">
+                                  <li>
+                                      <Link to="/on-a-sunday-in-august">On a Sunday in August</Link>
+                                  </li>
+                                  <li>Honey Never Spoils</li>
+                              </ul>
+                          ) : (
+                              <></>
+                          )}
                       </li>
                       <li>
                           <a href="https://www.instagram.com/fringeoasia/">
