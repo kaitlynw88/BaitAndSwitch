@@ -1,13 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
+//Cast photos
+import Chloe from "../../assets/headshots/ChloeChan.jpg"
 import castPic from "../../assets/OASIA/Cast/ChloeChanPic.JPG"
-import JosephBrown from "../../assets/headshots/JosephBrown.jpg"
-import Eli from "../../assets/headshots/Eli.jpg"
+import Ashley from "../../assets/headshots/AshleyDingwell.jpg"
 import Cayne from "../../assets/headshots/Cayne.jpg";
+import Eli from "../../assets/headshots/Eli.jpg"
+import JosephBrown from "../../assets/headshots/JosephBrown.jpg"
+
+//Professional shots
 import img1 from "../../assets/OASIA/Cast/DSC_0013.JPG"
 import img2 from "../../assets/OASIA/Cast/DSC_0021.JPG";
 import img3 from "../../assets/OASIA/Cast/DSC_0051.JPG";
 
 function OnASunday() {
+    const [count, setCount]=useState(0)
+    const handleBack =()=>{
+        console.log("we went back")
+        setCount(count - 1)
+        console.log(count)
+    }
+
+    const handleforward =()=>{
+        console.log("we went forward")
+        setCount(count + 1);
+        console.log(count);
+    }
   return (
       <div className="OnASunday">
           <div className="wrapper">
@@ -16,20 +33,27 @@ function OnASunday() {
                   <div className="castMembers">
                       <h4>Chloe Chan</h4>
                       <div className="castInfo">
-                          <img src={castPic} alt="Chloe Chan" />
+                          <img src={Chloe} alt="Chloe Chan" />
                           <p className="Bio">
-                              Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Exercitationem placeat dolores
-                              ullam vero quas perferendis possimus, ratione,
-                              dolor voluptatum illum quia vel animi corrupti
-                              porro sed, beatae accusamus modi optio.
+                              Chloe Chan is a Hong Kong-Canadian actress. If you
+                              ask her what her dream role is, she will say
+                              fierce, vulnerable female characters. Chan landed
+                              her most notable acting roles to date at age 12,
+                              portraying Alva (Donnie Yen’s foster daughter) in
+                              Chinese blockbuster film ‘Chasing the Dragon’ and
+                              Sonia in Hong Kong film ‘Staycation’. She is an
+                              incoming student at NTS and was previously at
+                              NYU’s Tisch School of the Arts, majoring in
+                              Theatre. Chan deeply wishes that the Gen-Z version
+                              of her favourite rom-coms Notting Hill and Dirty
+                              Dancing will soon have an Asian lead.
                           </p>
                       </div>
                   </div>
                   <div className="castMembers">
                       <h4>Ashley Dingwell</h4>
                       <div className="castInfo">
-                          <img src={castPic} alt="Chloe Chan" />
+                          <img src={Ashley} alt="Ashley Dingwell" />
                           <p className="Bio">
                               Ashley Dingwell (she/they) has roots in Labrador,
                               but now calls Toronto home. She is an actor,
@@ -119,10 +143,20 @@ function OnASunday() {
               </section>
           </div>
           <section>
-              <h2 className="titl">Professional shots</h2>
-              <img src={img1} alt="name 1" />
-              <img src={img2} alt="name 2" />
-              <img src={img3} alt="name 3" />
+              <h2 className="title">Professional shots</h2>
+              <div className="carouselContainer">
+                <p onClick={handleBack}>
+                    Back
+                </p>
+                  <div className="images">
+                      <img src={img1} alt="name 1" />
+                      <img src={img2} alt="name 2" />
+                      <img src={img3} alt="name 3" />
+                  </div>
+                  <p onClick={handleforward}>
+                    Forward
+                  </p>
+              </div>
           </section>
       </div>
   );
