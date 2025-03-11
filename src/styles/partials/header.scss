@@ -6,7 +6,7 @@
         .navigationBar{
             display: flex;
             align-items: center;
-            ul{
+            .navBar{
                 display:flex;
                 width: 500px;
                 justify-content: space-between;
@@ -24,25 +24,6 @@
 
                 }
             }
-            .dropdownContainer {
-                width: auto;
-                font-size: 1.25rem;
-                position: relative;
-                .dropdown {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    padding:0;
-                    position:absolute;
-                    top:22px;
-                    background-color: black;
-                    width:200px;
-                    li{
-                        border-bottom: 2px solid black;
-                        padding: 10px 0;
-                    }
-                }
-            }
         }
     }
     .navButton{
@@ -54,9 +35,46 @@
 
 @media(max-width:900px){
     .navigation{
+        .wrapper{
+            .navigationBar{
+                position: relative;
+                background-color: #E0E2DB;
+                position:fixed;
+                z-index: 10;
+                    width: 100%;
+                    height: 40px;
+                    justify-content: flex-end;
+                .navBar{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width:auto;
+                    height:200px;
+                    position:absolute;
+                    top:70px;
+                    display:none;
+                }
 
-        .navButton{
-            display:inline-block;
+                .navBar.active {
+                    position: fixed;
+                    z-index: 10;
+                    display:flex;
+                    left: 10px;
+                    top:24px;
+                    transition: 0.5s ease;
+                    // background-color: black;
+                    background-color: #E0E2DB;;
+                    width:200px;
+                    left: calc(100% - 200px);
+                    align-items: space-evenly;
+                }
+            }
+            .navButton{
+                display:inline-block;
+                position: absolute;
+                top:-10px;
+                padding:20px 0;
+                right:10px
+            }
         }
     }
 }

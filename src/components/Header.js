@@ -1,24 +1,21 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 function Header() {
-    const [clicked, setClicked] = useState()
-    const [dropdown, setDropdown] = useState();
-    const handleClick =()=>{
-        setClicked(!clicked)
-    }
-
-    const handleDropdown = () => {
-        setDropdown(!dropdown);
+    const [clicked, setClicked] = useState(false)
+    
+    const handleClick = () => {
+        setClicked(!clicked);
     };
+
   return (
       <header className="navigation">
           <div className="wrapper">
               <nav className="navigationBar">
-                  <ul>
+                  <ul className={clicked ? "navBar active" : "navBar"}>
                       <li>
                           <Link to="/">Home</Link>
                       </li>

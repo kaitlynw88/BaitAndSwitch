@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faArrowRight,
     faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link as Scroll } from "react-scroll";
 //Bio photos
 import Chloe from "../../assets/headshots/ChloeChan.jpg"
 import Ashley from "../../assets/headshots/AshleyDingwell.jpg"
@@ -13,18 +12,35 @@ import Eli from "../../assets/headshots/Eli.jpg"
 import JosephBrown from "../../assets/headshots/JosephBrown.jpg"
 
 //Cast Photos
+import Abbey1 from "../../assets/OASIA/Cast/Chloe-Abbey.JPG";
+import Abbey2 from "../../assets/OASIA/Cast/Ashley-Abbey.JPG";
+import Shelby from "../../assets/OASIA/Cast/Eli-Shelby.JPG";
+import Daniel from "../../assets/OASIA/Cast/Cayne-Daniel.JPG";
+import Paul from "../../assets/OASIA/Cast/Joe-Paul.JPG";
 
-
-// //Professional shots
-// import img1 from "../../assets/OASIA/Cast/DSC_0013.JPG"
-// import img2 from "../../assets/OASIA/Cast/DSC_0021.JPG";
-// import img3 from "../../assets/OASIA/Cast/DSC_0051.JPG";
-// import img4 from "../../assets/OASIA/Cast/DSC_0013.JPG";
-// import img5 from "../../assets/OASIA/Cast/DSC_0021.JPG";
-// import img6 from "../../assets/OASIA/Cast/DSC_0051.JPG";
+// //Carousel Images
+import image1 from "../../assets/OASIA/carouselImages/Carousel1.JPG"
+import image2 from "../../assets/OASIA/carouselImages/Carousel2.JPG";
+import image3 from "../../assets/OASIA/carouselImages/Carousel3.JPG";
+import image4 from "../../assets/OASIA/carouselImages/Carousel4.JPG";
+import image5 from "../../assets/OASIA/carouselImages/Carousel5.JPG";
+import image6 from "../../assets/OASIA/carouselImages/Carousel6.JPG";
+import image7 from "../../assets/OASIA/carouselImages/Carousel7.JPG";
+import image8 from "../../assets/OASIA/carouselImages/Carousel8.JPG";
+import image9 from "../../assets/OASIA/carouselImages/Carousel9.JPG";
+import image10 from "../../assets/OASIA/carouselImages/Carousel10.JPG";
+import image11 from "../../assets/OASIA/carouselImages/Carousel11.JPG";
+import image12 from "../../assets/OASIA/carouselImages/Carousel12.jpg";
+import image13 from "../../assets/OASIA/carouselImages/Carousel13.jpg";
+import image14 from "../../assets/OASIA/carouselImages/Carousel14.JPG";
+import image15 from "../../assets/OASIA/carouselImages/Carousel15.JPG";
+import image16 from "../../assets/OASIA/carouselImages/Carousel16.JPG";
+import image17 from "../../assets/OASIA/carouselImages/Carousel17.JPG";
+import image18 from "../../assets/OASIA/carouselImages/Carousel18.JPG";
+import image19 from "../../assets/OASIA/carouselImages/Carousel19.jpg";
 
 function OnASunday() {
-    // const images = [img1, img2, img3, img4, img5, img6];
+    const images = [image1, image2, image3, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19];
 
      function previousImage() {
          let slider = document.getElementById("slider");
@@ -37,9 +53,28 @@ function OnASunday() {
      }
   return (
       <div className="OnASunday">
-          <div className="wrapper">
-              <h2>On a Sunday in August Cast:</h2>
-              <section className="cast">
+          <section className="playInfo">
+              <div className="wrapper">
+                  <h2 className="title">On a Sunday in August</h2>
+                  <h4>Tarragon Theatre Solo Room: Toronto On.</h4>
+                  <div className="showDates">
+                      <p>
+                          Friday July 5 <br />
+                          Saturday July 6 <br />
+                          Sunday July 7 <br />
+                          Monday July 8 <br />
+                      </p>
+                      <p>
+                          Tuesday July 9 <br />
+                          Thursday July 11 <br />
+                          Saturday July 13 <br />
+                          Sunday July 14 <br />
+                      </p>
+                  </div>
+              </div>
+          </section>
+          <section className="cast">
+              <div className="wrapper">
                   <div className="castMembers">
                       <h4>Chloe Chan</h4>
                       <div className="castInfo">
@@ -58,6 +93,10 @@ function OnASunday() {
                               of her favourite rom-coms Notting Hill and Dirty
                               Dancing will soon have an Asian lead.
                           </p>
+                          <img
+                              src={Abbey1}
+                              alt="Chloe Chan as Abbey in On a Sunday in August"
+                          />
                       </div>
                   </div>
                   <div className="castMembers">
@@ -86,6 +125,10 @@ function OnASunday() {
                               Fringe and she is so grateful to be introduced to
                               the festival alongside this beautiful team.
                           </p>
+                          <img
+                              src={Abbey2}
+                              alt="Ashley Dingwell as Abbey in On a Sunday in August"
+                          />
                       </div>
                   </div>
                   <div className="castMembers">
@@ -112,6 +155,10 @@ function OnASunday() {
                               always searching for opportunities to display his
                               skills and work to the world!
                           </p>
+                          <img
+                              src={Daniel}
+                              alt="Cayne Kitagawa as Daniel in On a Sunday in August"
+                          />
                       </div>
                   </div>
                   <div className="castMembers">
@@ -126,6 +173,10 @@ function OnASunday() {
                               role in a feature film, View From the Edge,
                               expected to be released winter 2024.
                           </p>
+                          <img
+                              src={Shelby}
+                              alt="Eli-Bella Wood as Shelby in On a Sunday in August"
+                          />
                       </div>
                   </div>
                   <div className="castMembers">
@@ -148,10 +199,14 @@ function OnASunday() {
                               of this wonderful story with an amazing cast and
                               crew!
                           </p>
+                          <img
+                              src={Paul}
+                              alt="Joseph Brown as Paul in On a Sunday in August"
+                          />
                       </div>
                   </div>
-              </section>
-          </div>
+              </div>
+          </section>
           <section className="carouselSection">
               <div className="wrapper">
                   <div className="carousel">
@@ -161,7 +216,7 @@ function OnASunday() {
                       >
                           <FontAwesomeIcon icon={faArrowLeft} />
                       </button>
-                      {/* <div className="carouselImage" id="slider">
+                      <div className="carouselImage" id="slider">
                           {images.map((image, index) => (
                               <img
                                   src={image}
@@ -174,7 +229,7 @@ function OnASunday() {
                                   }
                               />
                           ))}
-                      </div> */}
+                      </div>
                       <button
                           className="carouselButton buttonNext"
                           onClick={nextImage}
@@ -184,13 +239,16 @@ function OnASunday() {
                   </div>
               </div>
           </section>
-          <section>
-              <h3>The Song: Pennies nickles and dimes</h3>
+          <section className="pennies">
+              <h2 className="subTitle">Pennies nickles and dimes</h2>
               <p>
                   <a href="https://youtu.be/G2Hz9zbJuMs?si=GiHnZZT_Gy9JDVka">
-                      Pennies, Nickels & Dimes by Duff ... ld (Written by
+                      Pennies, Nickels & Dimes by Duff MacDonald (Written by
                       Stewart Sanderson)
                   </a>
+              </p>
+              <p>
+                This song was instrumental in the making of this play.
               </p>
           </section>
       </div>

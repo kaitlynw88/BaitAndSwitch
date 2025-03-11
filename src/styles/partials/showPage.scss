@@ -1,5 +1,29 @@
+
+
 .posterContainer{
+    position: relative;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
     img{
         width:400px;
+    }
+    .overlay{
+        width:400px;
+        height:100%;
+        background-color: transparent;
+        color:transparent;
+        position:absolute;
+        transition-duration: 0.15s;
+        font-size: 1.25rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &:hover, &:focus{
+            background-color: rgba(0, 0, 0, 0.8);
+            color:white;
+        }
     }
 }

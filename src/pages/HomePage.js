@@ -21,11 +21,13 @@ function HomePage() {
               </div>
           </section>
           <section>
-              <p>
-                  <a href="mailto:fringe.baitandswitch@gmail.com">
-                      fringe.baitandswitch@gmail.com
-                  </a>
-              </p>
+              <div className="wrapper">
+                  <p className="email">
+                      <a href="mailto:fringe.baitandswitch@gmail.com">
+                          fringe.baitandswitch@gmail.com
+                      </a>
+                  </p>
+              </div>
           </section>
       </>
   );
