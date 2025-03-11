@@ -25,21 +25,8 @@ function Header() {
                       <li>
                           <Link to="/about">About</Link>
                       </li>
-                      <li
-                          className="dropdownContainer"
-                          onClick={handleDropdown}
-                      >
-                          Our Shows
-                          {dropdown ? (
-                              <ul className="dropdown">
-                                  <li>
-                                      <Link to="/on-a-sunday-in-august">On a Sunday in August</Link>
-                                  </li>
-                                  <li>Honey Never Spoils</li>
-                              </ul>
-                          ) : (
-                              <></>
-                          )}
+                      <li>
+                         <Link to="/our-shows">Our Shows</Link>
                       </li>
                       <li>
                           <a href="https://www.instagram.com/fringeoasia/">

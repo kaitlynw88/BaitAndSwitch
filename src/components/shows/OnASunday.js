@@ -1,30 +1,40 @@
 import React, {useState} from 'react'
-//Cast photos
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faArrowRight,
+    faArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link as Scroll } from "react-scroll";
+//Bio photos
 import Chloe from "../../assets/headshots/ChloeChan.jpg"
-import castPic from "../../assets/OASIA/Cast/ChloeChanPic.JPG"
 import Ashley from "../../assets/headshots/AshleyDingwell.jpg"
 import Cayne from "../../assets/headshots/Cayne.jpg";
 import Eli from "../../assets/headshots/Eli.jpg"
 import JosephBrown from "../../assets/headshots/JosephBrown.jpg"
 
-//Professional shots
-import img1 from "../../assets/OASIA/Cast/DSC_0013.JPG"
-import img2 from "../../assets/OASIA/Cast/DSC_0021.JPG";
-import img3 from "../../assets/OASIA/Cast/DSC_0051.JPG";
+//Cast Photos
+
+
+// //Professional shots
+// import img1 from "../../assets/OASIA/Cast/DSC_0013.JPG"
+// import img2 from "../../assets/OASIA/Cast/DSC_0021.JPG";
+// import img3 from "../../assets/OASIA/Cast/DSC_0051.JPG";
+// import img4 from "../../assets/OASIA/Cast/DSC_0013.JPG";
+// import img5 from "../../assets/OASIA/Cast/DSC_0021.JPG";
+// import img6 from "../../assets/OASIA/Cast/DSC_0051.JPG";
 
 function OnASunday() {
-    const [count, setCount]=useState(0)
-    const handleBack =()=>{
-        console.log("we went back")
-        setCount(count - 1)
-        console.log(count)
-    }
+    // const images = [img1, img2, img3, img4, img5, img6];
 
-    const handleforward =()=>{
-        console.log("we went forward")
-        setCount(count + 1);
-        console.log(count);
-    }
+     function previousImage() {
+         let slider = document.getElementById("slider");
+         slider.scrollLeft = slider.scrollLeft - 400;
+     }
+
+     function nextImage() {
+         let slider = document.getElementById("slider");
+         slider.scrollLeft = slider.scrollLeft + 400;
+     }
   return (
       <div className="OnASunday">
           <div className="wrapper">
@@ -142,21 +152,46 @@ function OnASunday() {
                   </div>
               </section>
           </div>
-          <section>
-              <h2 className="title">Professional shots</h2>
-              <div className="carouselContainer">
-                <p onClick={handleBack}>
-                    Back
-                </p>
-                  <div className="images">
-                      <img src={img1} alt="name 1" />
-                      <img src={img2} alt="name 2" />
-                      <img src={img3} alt="name 3" />
+          <section className="carouselSection">
+              <div className="wrapper">
+                  <div className="carousel">
+                      <button
+                          className="carouselButton buttonPrevious"
+                          onClick={previousImage}
+                      >
+                          <FontAwesomeIcon icon={faArrowLeft} />
+                      </button>
+                      {/* <div className="carouselImage" id="slider">
+                          {images.map((image, index) => (
+                              <img
+                                  src={image}
+                                  alt=""
+                                  key={index}
+                                  className={
+                                      index === images.length - 1
+                                          ? "slide lastSlide"
+                                          : "slide"
+                                  }
+                              />
+                          ))}
+                      </div> */}
+                      <button
+                          className="carouselButton buttonNext"
+                          onClick={nextImage}
+                      >
+                          <FontAwesomeIcon icon={faArrowRight} />
+                      </button>
                   </div>
-                  <p onClick={handleforward}>
-                    Forward
-                  </p>
               </div>
+          </section>
+          <section>
+              <h3>The Song: Pennies nickles and dimes</h3>
+              <p>
+                  <a href="https://youtu.be/G2Hz9zbJuMs?si=GiHnZZT_Gy9JDVka">
+                      Pennies, Nickels & Dimes by Duff ... ld (Written by
+                      Stewart Sanderson)
+                  </a>
+              </p>
           </section>
       </div>
   );

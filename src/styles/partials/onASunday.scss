@@ -1,0 +1,93 @@
+.OnASunday {
+    h2 {
+        padding: 20px 0;
+    }
+
+    .castMembers {
+        h4 {
+            font-size: 1.2rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #38413f
+        }
+
+        .castInfo {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+
+            img {
+                width: 300px;
+                margin-right: 30px;
+            }
+
+            .Bio {
+                width: 50%;
+            }
+        }
+    }
+
+}
+
+.carouselSection {
+    .wrapper {
+        .carousel {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin: 40px 0;
+
+            .carouselButton {
+                position: absolute;
+                width: 3.5rem;
+                height: 3.5rem;
+                background-color: rgba(255, 255, 255, 0.75);
+                color: black;
+                z-index: 20;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                    transform: translateY(0em);
+                    box-shadow: 0 0em 0em -0em white;
+                    background-color: white;
+                }
+            }
+
+            .buttonPrevious {
+                left: 1rem;
+            }
+
+            .buttonNext {
+                right: 1rem;
+            }
+
+            .carouselImage {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                justify-content: space-between;
+                scroll-behavior: smooth;
+                // img{
+                //     width: 400px;
+                // }
+                .slide {
+                    border-radius: 0px;
+                    width: 500px;
+                    margin-right: 30px;
+                    scroll-snap-type: x mandatory;
+                }
+
+                .lastSlide {
+                    margin-right: 0px;
+                }
+            }
+
+        }
+    }
+}
