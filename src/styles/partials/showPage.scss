@@ -27,3 +27,14 @@
         }
     }
 }
+
+@media(max-width:750px){
+    .posterContainer{
+        img{
+            width:200px;
+        }
+        .overlay{
+            width:200px;
+        }
+    }
+}
