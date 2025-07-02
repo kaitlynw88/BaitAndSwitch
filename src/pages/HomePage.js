@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from "react-router";
+// import { Link } from "react-router";
 
 function HomePage() {
     
@@ -16,12 +16,13 @@ function HomePage() {
           <section className="banner">
               <div className="wrapper">
                   <h2>Now Playing: Honey Never Spoils</h2>
-                  <Link to="/our-shows/honey-never-spoils">
+                  {/* <Link to="/our-shows/honey-never-spoils">
                       <h4>Click for more info about the show.</h4>
-                  </Link>
+                  </Link> */}
                   <h3>
+                      Get your tickets now at{" "}
                       <a href="https://fringetoronto.com/fringe/show/honey-never-spoils">
-                          Get your tickets now!
+                          FingeToronto.com!
                       </a>
                   </h3>
               </div>

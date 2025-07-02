@@ -1,9 +1,9 @@
 import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faArrowRight,
-    faArrowLeft,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//     faArrowRight,
+//     faArrowLeft,
+// } from "@fortawesome/free-solid-svg-icons";
 //Bio photos
 import Chantel from "../../assets/HoneyNS/ChantelWinters.jpg";
 import Jacob from "../../assets/HoneyNS/JacobKlick.JPG";
@@ -17,38 +17,38 @@ import Jada from "../../assets/HoneyNS/JadaRifkin.jpg";
 // import Jada from "../../assets/HoneyNS/ChantelWinters.jpg";
 
 // //Carousel Images
-import image1 from "../../assets/OASIA/carouselImages/Carousel1.JPG"
-import image2 from "../../assets/OASIA/carouselImages/Carousel2.JPG";
-import image3 from "../../assets/OASIA/carouselImages/Carousel3.JPG";
-import image4 from "../../assets/OASIA/carouselImages/Carousel4.JPG";
-import image5 from "../../assets/OASIA/carouselImages/Carousel5.JPG";
-import image6 from "../../assets/OASIA/carouselImages/Carousel6.JPG";
-import image7 from "../../assets/OASIA/carouselImages/Carousel7.JPG";
-import image8 from "../../assets/OASIA/carouselImages/Carousel8.JPG";
-import image9 from "../../assets/OASIA/carouselImages/Carousel9.JPG";
-import image10 from "../../assets/OASIA/carouselImages/Carousel10.JPG";
-import image11 from "../../assets/OASIA/carouselImages/Carousel11.JPG";
-import image12 from "../../assets/OASIA/carouselImages/Carousel12.jpg";
-import image13 from "../../assets/OASIA/carouselImages/Carousel13.jpg";
-import image14 from "../../assets/OASIA/carouselImages/Carousel14.JPG";
-import image15 from "../../assets/OASIA/carouselImages/Carousel15.JPG";
-import image16 from "../../assets/OASIA/carouselImages/Carousel16.JPG";
-import image17 from "../../assets/OASIA/carouselImages/Carousel17.JPG";
-import image18 from "../../assets/OASIA/carouselImages/Carousel18.JPG";
-import image19 from "../../assets/OASIA/carouselImages/Carousel19.jpg";
+// import image1 from "../../assets/OASIA/carouselImages/Carousel1.JPG"
+// import image2 from "../../assets/OASIA/carouselImages/Carousel2.JPG";
+// import image3 from "../../assets/OASIA/carouselImages/Carousel3.JPG";
+// import image4 from "../../assets/OASIA/carouselImages/Carousel4.JPG";
+// import image5 from "../../assets/OASIA/carouselImages/Carousel5.JPG";
+// import image6 from "../../assets/OASIA/carouselImages/Carousel6.JPG";
+// import image7 from "../../assets/OASIA/carouselImages/Carousel7.JPG";
+// import image8 from "../../assets/OASIA/carouselImages/Carousel8.JPG";
+// import image9 from "../../assets/OASIA/carouselImages/Carousel9.JPG";
+// import image10 from "../../assets/OASIA/carouselImages/Carousel10.JPG";
+// import image11 from "../../assets/OASIA/carouselImages/Carousel11.JPG";
+// import image12 from "../../assets/OASIA/carouselImages/Carousel12.jpg";
+// import image13 from "../../assets/OASIA/carouselImages/Carousel13.jpg";
+// import image14 from "../../assets/OASIA/carouselImages/Carousel14.JPG";
+// import image15 from "../../assets/OASIA/carouselImages/Carousel15.JPG";
+// import image16 from "../../assets/OASIA/carouselImages/Carousel16.JPG";
+// import image17 from "../../assets/OASIA/carouselImages/Carousel17.JPG";
+// import image18 from "../../assets/OASIA/carouselImages/Carousel18.JPG";
+// import image19 from "../../assets/OASIA/carouselImages/Carousel19.jpg";
 
 function HoneyNS() {
-    const images = [image1, image2, image3, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19];
+    // const images = [image1, image2, image3, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19];
 
-     function previousImage() {
-         let slider = document.getElementById("slider");
-         slider.scrollLeft = slider.scrollLeft - 400;
-     }
+    //  function previousImage() {
+    //      let slider = document.getElementById("slider");
+    //      slider.scrollLeft = slider.scrollLeft - 400;
+    //  }
 
-     function nextImage() {
-         let slider = document.getElementById("slider");
-         slider.scrollLeft = slider.scrollLeft + 400;
-     }
+    //  function nextImage() {
+    //      let slider = document.getElementById("slider");
+    //      slider.scrollLeft = slider.scrollLeft + 400;
+    //  }
   return (
       <div className="OnASunday">
           <section className="playInfo">
@@ -93,10 +93,10 @@ function HoneyNS() {
                               August Hard-Bitten will stage her play Dear Ms.
                               Kitt at the Aki Studio theatre.
                           </p>
-                          <img
+                          {/* <img
                               src={Chantel}
                               alt="Chantel Winters as Brooke in Honey never spoils."
-                          />
+                          /> */}
                       </div>
                   </div>
                   <div className="castMembers">
@@ -123,10 +123,10 @@ function HoneyNS() {
                               you lovely patrons of Canadian theatre! Training:
                               University of Toronto; Sheridan College.
                           </p>
-                          <img
+                          {/* <img
                               src={Jacob}
                               alt="Jacob Klick as Evan in Honey never spoils."
-                          />
+                          /> */}
                       </div>
                   </div>
                   <div className="castMembers">
@@ -166,10 +166,10 @@ function HoneyNS() {
                                   thanks them for the opportunity to play.
                               </p>
                           </div>
-                          <img
+                          {/* <img
                               src={Nicole}
                               alt="Nicole Anne Smith as Victoria in Honey never spoils."
-                          />
+                          /> */}
                       </div>
                   </div>
                   <div className="castMembers">
@@ -192,15 +192,15 @@ function HoneyNS() {
                               commercials. Rifkin is a graduate of Randolph
                               College for the Performing Arts. @jadarifkin
                           </p>
-                          <img
+                          {/* <img
                               src={Jada}
                               alt="Jada Rifkin as Sarah in Honey never spoils."
-                          />
+                          /> */}
                       </div>
                   </div>
               </div>
           </section>
-          <section className="carouselSection">
+          {/* <section className="carouselSection">
               <div className="wrapper">
                   <div className="carousel">
                       <button
@@ -231,7 +231,7 @@ function HoneyNS() {
                       </button>
                   </div>
               </div>
-          </section>
+          </section> */}
       </div>
   );
 }
