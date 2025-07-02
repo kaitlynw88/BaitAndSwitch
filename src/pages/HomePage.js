@@ -1,5 +1,7 @@
 import React from 'react'
 
+// import { Link } from "react-router";
+
 function HomePage() {
     
   return (
@@ -7,17 +9,22 @@ function HomePage() {
           <section>
               <div className="wrapper">
                   <div className="hero">
-                      <div className="heroTitle">
-                          <h1 className="title">Bait and Switch</h1>
-                      </div>
                       <div className="heroImage"></div>
                   </div>
               </div>
           </section>
           <section className="banner">
               <div className="wrapper">
-                  <h2>Coming soon!</h2>
-                  <h3>Toronto Fringe Festival July 2-13, 2025</h3>
+                  <h2>Now Playing: Honey Never Spoils</h2>
+                  {/* <Link to="/our-shows/honey-never-spoils">
+                      <h4>Click for more info about the show.</h4>
+                  </Link> */}
+                  <h3>
+                      Get your tickets now at{" "}
+                      <a href="https://fringetoronto.com/fringe/show/honey-never-spoils">
+                          FingeToronto.com!
+                      </a>
+                  </h3>
               </div>
           </section>
           <section>

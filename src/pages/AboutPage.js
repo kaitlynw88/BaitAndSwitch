@@ -59,16 +59,7 @@ function AboutPage() {
                                   </div>
                                   <div className="bioText">
                                       <p>
-                                          Is a Toronto-based Director,
-                                          Dramaturge, Actor. She loves working
-                                          on new works and has even written and
-                                          performed her own one-woman show Walk
-                                          Good. Fringe is such a special time of
-                                          year in the city and Stephanie is
-                                          always happy to participate,
-                                          especially this year with the most
-                                          talented new playwright and cast of
-                                          actors.
+                                          Theatre is the kaleidoscope with which we view the human condition. When we shine a light on the juxtaposition of kindness with cruelty, despair with laughter, love with hopelessness, we can see the beautiful, tragic mosaic that is life and humanity.
                                       </p>
                                   </div>
                               </div>
