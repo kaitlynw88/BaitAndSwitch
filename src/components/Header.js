@@ -13,8 +13,11 @@ function Header() {
 
   return (
       <header className="navigation">
-          <div className="wrapper">
+          <div className="navContainer">
               <nav className="navigationBar">
+                <h1>
+                    Bait and Switch Theatre
+                </h1>
                   <ul className={clicked ? "navBar active" : "navBar"}>
                       <li>
                           <Link to="/">Home</Link>
@@ -23,10 +26,10 @@ function Header() {
                           <Link to="/about">About</Link>
                       </li>
                       <li>
-                         <Link to="/our-shows">Our Shows</Link>
+                          <Link to="/our-shows">Our Shows</Link>
                       </li>
                       <li>
-                          <a href="https://www.instagram.com/fringeoasia/">
+                          <a href="https://www.instagram.com/bait.and.switch.co/">
                               <span className="sr-only">Instagram</span>
                               <FontAwesomeIcon
                                   icon={faInstagram}

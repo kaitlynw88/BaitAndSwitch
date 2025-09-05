@@ -6,13 +6,13 @@ function HomePage() {
     
   return (
       <>
-          <section>
+          {/* <section>
               <div className="wrapper">
                   <div className="hero">
                       <div className="heroImage"></div>
                   </div>
               </div>
-          </section>
+          </section> */}
           <section className="banner">
               <div className="wrapper">
                   <h2>Now Playing: Honey Never Spoils</h2>
@@ -22,7 +22,7 @@ function HomePage() {
                   <h3>
                       Get your tickets now at{" "}
                       <a href="https://fringetoronto.com/fringe/show/honey-never-spoils">
-                          FingeToronto.com!
+                          FringeToronto.com!
                       </a>
                   </h3>
               </div>
