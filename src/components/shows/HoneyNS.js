@@ -76,9 +76,14 @@ function HoneyNS() {
               </div>
           </section>
           <section>
-            <div className="wrapper">
-              <ReactAudioPlayer src={musicAudio} autoPlay controls />
-            </div>
+              <div className="wrapper">
+                  <ReactAudioPlayer
+                      src={musicAudio}
+                      autoPlay
+                      controls
+                      controlsList="nodownload"
+                  />
+              </div>
           </section>
           <section className="cast">
               <div className="wrapper">
@@ -190,26 +195,6 @@ function HoneyNS() {
                           />
                       </div>
                   </div>
-              </div>
-          </section>
-          <section className="pennies">
-              <div className="wrapper">
-                  <h3 className="subTitle penniesTitle">
-                      Pennies nickles and dimes
-                  </h3>
-                  <p>
-                      The song "Pennies, Nickels & Dimes" is the soundtrack of
-                      "On A Sunday In August" Special thanks to Duff MacDonald
-                      (pictured above), Stewart Sanderson (AKA "Grizz"), and
-                      James Collins for permission, and for the beautiful story
-                      this song tells. Please click the link below to listen.
-                  </p>
-                  <p className="songLink">
-                      <a href="https://youtu.be/G2Hz9zbJuMs?si=GiHnZZT_Gy9JDVka">
-                          Pennies, Nickels & Dimes by Duff MacDonald (Written by
-                          Stewart Sanderson)
-                      </a>
-                  </p>
               </div>
           </section>
           <section className="carouselSection">
