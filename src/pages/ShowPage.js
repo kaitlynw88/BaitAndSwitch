@@ -1,6 +1,6 @@
 import React from 'react'
 import Poster from "../assets/OASIA/OnASundayInAugustInstaStory.png"
-// import Poster2 from "../assets/HoneyNS/HoneyNSPoster.png"
+import Poster2 from "../assets/HoneyNS/HoneyNSPoster.png"
 import { Link } from "react-router";
 
 
@@ -17,14 +17,14 @@ function ShowPage() {
                       <img src={Poster} alt="On a Sunday in August Poster" />
                   </Link>
               </div>
-              {/* <div className="posterContainer secondPoster">
+              <div className="posterContainer secondPoster">
                   <Link to="honey-never-spoils">
                       <h4 className="overlay">
                           Click for more info about the show.
                       </h4>
                       <img src={Poster2} alt="Honey Never Spoils" />
                   </Link>
-              </div> */}
+              </div>
           </div>
       </div>
   );

@@ -19,7 +19,7 @@ import Daniel from "../../assets/OASIA/Cast/Cayne-Daniel.JPG";
 import Paul from "../../assets/OASIA/Cast/Joe-Paul.JPG";
 
 // //Carousel Images
-import image1 from "../../assets/OASIA/carouselImages/Carousel1.JPG"
+import image13 from "../../assets/OASIA/carouselImages/Carousel1.JPG"
 import image2 from "../../assets/OASIA/carouselImages/Carousel2.JPG";
 import image3 from "../../assets/OASIA/carouselImages/Carousel3.JPG";
 import image4 from "../../assets/OASIA/carouselImages/Carousel4.JPG";
@@ -31,7 +31,7 @@ import image9 from "../../assets/OASIA/carouselImages/Carousel9.JPG";
 import image10 from "../../assets/OASIA/carouselImages/Carousel10.JPG";
 import image11 from "../../assets/OASIA/carouselImages/Carousel11.JPG";
 import image12 from "../../assets/OASIA/carouselImages/Carousel12.jpg";
-import image13 from "../../assets/OASIA/carouselImages/Carousel13.jpg";
+import image1 from "../../assets/OASIA/carouselImages/Carousel13.jpg";
 import image14 from "../../assets/OASIA/carouselImages/Carousel14.JPG";
 import image15 from "../../assets/OASIA/carouselImages/Carousel15.JPG";
 import image16 from "../../assets/OASIA/carouselImages/Carousel16.JPG";
@@ -40,7 +40,7 @@ import image18 from "../../assets/OASIA/carouselImages/Carousel18.JPG";
 import image19 from "../../assets/OASIA/carouselImages/Carousel19.jpg";
 
 function OnASunday() {
-    const images = [image1, image2, image3, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19];
+    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18];
 
      function previousImage() {
          let slider = document.getElementById("slider");
@@ -56,27 +56,35 @@ function OnASunday() {
           <section className="playInfo">
               <div className="wrapper">
                   <h2 className="title">On a Sunday in August</h2>
-                  <h4>Tarragon Theatre Solo Room: Toronto On.</h4>
-                  <div className="showDates">
+                  <div>
+                      <h3 className='subTitle'>Synopsis</h3>
                       <p>
-                          Friday July 5 <br />
-                          Saturday July 6 <br />
-                          Sunday July 7 <br />
-                          Monday July 8 <br />
-                      </p>
-                      <p>
-                          Tuesday July 9 <br />
-                          Thursday July 11 <br />
-                          Saturday July 13 <br />
-                          Sunday July 14 <br />
+                          On a Sunday in August offers a glimpse of rural life
+                          in small-town Ontario. Throwing the audience into the
+                          Wright family farm, amid a life-altering decision.
+                          When grit and determination are no longer enough, the
+                          Wright family has done all it can to survice. They do
+                          this not only for themselves but for their town and
+                          community around them. But when the community is no
+                          longer there, and all the support has left, tensions
+                          run high as the weight of their legacy and their
+                          futures become clear.
                       </p>
                   </div>
+                  <p className="credit">
+                      Written by <em>Olivia Quinn-Smith</em> <br />
+                      Directed by <em>Stephanie Williams</em>
+                  </p>
               </div>
           </section>
           <section className="cast">
               <div className="wrapper">
+                  <h3 className='subTitle'>Cast</h3>
                   <div className="castMembers">
-                      <h4>Chloe Chan</h4>
+                      <h4>Chloe Chan as Abby Wright</h4>
+                      <p>
+                          <em>(at certain performances)</em>
+                      </p>
                       <div className="castInfo">
                           <img src={Chloe} alt="Chloe Chan" />
                           <p className="Bio">
@@ -100,7 +108,10 @@ function OnASunday() {
                       </div>
                   </div>
                   <div className="castMembers">
-                      <h4>Ashley Dingwell</h4>
+                      <h4>Ashley Dingwell as Abbey Wright</h4>
+                      <p>
+                          <em>(at certain performaces)</em>
+                      </p>
                       <div className="castInfo">
                           <img src={Ashley} alt="Ashley Dingwell" />
                           <p className="Bio">
@@ -132,7 +143,7 @@ function OnASunday() {
                       </div>
                   </div>
                   <div className="castMembers">
-                      <h4>Cayne Kitagawa</h4>
+                      <h4>Cayne Kitagawa as Daniel Wright</h4>
                       <div className="castInfo">
                           <img src={Cayne} alt="Cayne Kitagawa" />
                           <p className="Bio">
@@ -162,7 +173,7 @@ function OnASunday() {
                       </div>
                   </div>
                   <div className="castMembers">
-                      <h4>Eli-Bella Wood</h4>
+                      <h4>Eli-Bella Wood as Shelby</h4>
                       <div className="castInfo">
                           <img src={Eli} alt="Eli-Bella Wood" />
                           <p className="Bio">
@@ -180,7 +191,7 @@ function OnASunday() {
                       </div>
                   </div>
                   <div className="castMembers">
-                      <h4>Joseph Brown</h4>
+                      <h4>Joseph Brown as Paul Wright</h4>
                       <div className="castInfo">
                           <img src={JosephBrown} alt="Joseph Brown" />
                           <p className="Bio">
@@ -205,6 +216,29 @@ function OnASunday() {
                           />
                       </div>
                   </div>
+              </div>
+          </section>
+          <section className="pennies">
+              <div className="wrapper">
+                  <h3 className="subTitle penniesTitle">Pennies nickles and dimes</h3>
+                  <img
+                      src={image19}
+                      alt="The cast of On a Sunday in August with Duff MacDonald."
+                      className="duffyImage"
+                  />
+                  <p>
+                      The song "Pennies, Nickels & Dimes" is the soundtrack of
+                      "On A Sunday In August" Special thanks to Duff MacDonald
+                      (pictured above), Stewart Sanderson (AKA "Grizz"), and
+                      James Collins for permission, and for the beautiful story
+                      this song tells. Please click the link below to listen.
+                  </p>
+                  <p className="songLink">
+                      <a href="https://youtu.be/G2Hz9zbJuMs?si=GiHnZZT_Gy9JDVka">
+                          Pennies, Nickels & Dimes by Duff MacDonald (Written by
+                          Stewart Sanderson)
+                      </a>
+                  </p>
               </div>
           </section>
           <section className="carouselSection">
@@ -238,18 +272,6 @@ function OnASunday() {
                       </button>
                   </div>
               </div>
-          </section>
-          <section className="pennies">
-              <h2 className="subTitle">Pennies nickles and dimes</h2>
-              <p>
-                  <a href="https://youtu.be/G2Hz9zbJuMs?si=GiHnZZT_Gy9JDVka">
-                      Pennies, Nickels & Dimes by Duff MacDonald (Written by
-                      Stewart Sanderson)
-                  </a>
-              </p>
-              <p>
-                This song was instrumental in the making of this play.
-              </p>
           </section>
       </div>
   );

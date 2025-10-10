@@ -106,9 +106,10 @@
     }
 }
 
-.pennies {
-    .subTitle {
+.pennies .wrapper{
+    .penniesTitle {
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     p {
@@ -116,12 +117,12 @@
             color: #38413f;
             font-size: 1rem;
             font-style: italic;
-            &:hover,
-            &:focus {
-                border-bottom: 2px solid #38413f;
-            }
+            border-bottom: 2px solid #38413f;
         }
 
+    }
+    .duffyImage{
+        width:80%;
     }
 }
 

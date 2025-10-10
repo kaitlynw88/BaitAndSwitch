@@ -12,7 +12,7 @@ function AboutPage() {
                       <div className="biosContainer">
                           <div className="aboutContainer">
                               <h4>Founder / Executive Director</h4>
-                              <h3>Olivia Quinn Smith</h3>
+                              <h3>Olivia Quinn-Smith</h3>
                               <div className="imageContainer">
                                   <div className="headshot-image">
                                       <img
@@ -39,9 +39,9 @@ function AboutPage() {
                                           highlighting the two different ways of
                                           life; Rural and Metropolitan. This
                                           year, Olivia’s second production,
-                                          Honey Never Spoils, will be premiering
+                                          Honey Never Spoils, premiered
                                           at the Toronto Fringe Festival in July
-                                          2025. Tickets are on sale soon.
+                                          2025.
                                       </p>
                                   </div>
                               </div>
@@ -65,23 +65,6 @@ function AboutPage() {
                               </div>
                           </div>
                       </div>
-                  </div>
-              </section>
-              <section className="mission">
-                  <div className="wrapper">
-                      <h2 className="subTitle">About Bait and Switch</h2>
-                      <p>
-                          Bait and Switch Theatre Company is dedicated to
-                          exploring bold, original works that challenge
-                          expectations and push the boundaries of storytelling.
-                          We create dynamic, genre-blurring productions that
-                          draw audiences in with familiar ideas—only to subvert,
-                          twist, and transform them into something entirely
-                          unexpected. With a commitment to new voices, sharp
-                          writing, and immersive staging, we craft theatre that
-                          provokes thought, sparks conversation, and keeps
-                          audiences on the edge of their seats.
-                      </p>
                   </div>
               </section>
           </div>

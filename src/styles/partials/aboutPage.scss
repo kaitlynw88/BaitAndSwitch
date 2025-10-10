@@ -5,10 +5,7 @@
 .title{
     font-size: 4rem;
     margin-bottom: 2rem;
-}
-.subTitle{
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    padding-top: 40px;
 }
 .biosContainer{
     display:flex;
@@ -54,7 +51,7 @@
 }
 @media(max-width:750px){
     .title{
-        padding-top: 40px;
+        padding-top: 120px;
     }
     .biosContainer {
             flex-direction: column;
@@ -66,19 +63,6 @@
                     width: 100%;
                     height: auto;
                 }
-        
-                // .bioText {
-                //     width: 98%;
-        
-                //     h4 {
-                //         font-style: italic;
-                //         font-size: 1.2rem;
-                //     }
-        
-                //     p {
-                //         text-wrap: wrap;
-                //     }
-                // }
         
             }
     }

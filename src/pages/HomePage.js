@@ -1,38 +1,38 @@
 import React from 'react'
 
-// import { Link } from "react-router";
-
 function HomePage() {
     
   return (
       <>
           <section>
               <div className="wrapper">
-                  <div className="hero">
-                      <div className="heroImage"></div>
-                  </div>
+                  <h1>Bait and Switch Theatre</h1>
               </div>
           </section>
           <section className="banner">
               <div className="wrapper">
-                  <h2>Now Playing: Honey Never Spoils</h2>
-                  {/* <Link to="/our-shows/honey-never-spoils">
-                      <h4>Click for more info about the show.</h4>
-                  </Link> */}
+                  <h2>Honey Never Spoils</h2>
                   <h3>
-                      Get your tickets now at{" "}
+                      See our show info at{" "}
                       <a href="https://fringetoronto.com/fringe/show/honey-never-spoils">
-                          FingeToronto.com!
+                          FringeToronto.com!
                       </a>
                   </h3>
               </div>
           </section>
-          <section>
+          <section className="mission">
               <div className="wrapper">
-                  <p className="email">
-                      <a href="mailto:fringe.baitandswitch@gmail.com">
-                          fringe.baitandswitch@gmail.com
-                      </a>
+                  <h2 className="subTitle">About Bait and Switch</h2>
+                  <p>
+                      Bait and Switch Theatre Company is dedicated to exploring
+                      bold, original works that challenge expectations and push
+                      the boundaries of storytelling. We create dynamic,
+                      genre-blurring productions that draw audiences in with
+                      familiar ideas—only to subvert, twist, and transform them
+                      into something entirely unexpected. With a commitment to
+                      new voices, sharp writing, and immersive staging, we craft
+                      theatre that provokes thought, sparks conversation, and
+                      keeps audiences on the edge of their seats.
                   </p>
               </div>
           </section>
