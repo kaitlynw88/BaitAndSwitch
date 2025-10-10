@@ -76,9 +76,14 @@ function HoneyNS() {
               </div>
           </section>
           <section>
-            <div className="wrapper">
-              <ReactAudioPlayer src={musicAudio} autoPlay controls />
-            </div>
+              <div className="wrapper">
+                  <ReactAudioPlayer
+                      src={musicAudio}
+                      autoPlay
+                      controls
+                      controlsList="nodownload"
+                  />
+              </div>
           </section>
           <section className="cast">
               <div className="wrapper">
