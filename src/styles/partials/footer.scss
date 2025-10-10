@@ -2,4 +2,23 @@ footer {
     text-align: center;
     border-top: 1px solid #38413f;
     margin-top: 10px;
+    h4{
+        margin-bottom: 1rem;
+    }
+    .socialLinksContainer{
+        width:50%;
+        margin:0 auto;
+        display:flex;
+        justify-content: center;
+        .firstOf {
+            margin-right: 40px;
+        }
+        .socials{
+            height:2rem;
+            &:hover,
+                &:focus {
+                    border-bottom: 2px solid #38413f;
+                }
+        }
+    }
 }

@@ -1,33 +1,9 @@
-.hero {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    // .heroTitle {
-    //     width: 100%;
-    //     .title{
-    //         font-size: 6rem;
-
-    //     }
-    // }
-    .heroImage {
-        width: 100%;
-        background-image: url(../../assets/BaitAndSwitchLogo.png);
-        background-position:center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height:auto;
-        min-height: 70vh;
-    }
+h1{
+    font-size: 5rem;
+    padding-right: 100px;
+    text-align: left;
+    padding-top: 80px;
 }
-
-.fa-instagram {
-    font-size: 2rem;
-}
-
-.formContainer {
-    margin-left: 50px;
-}
-
 .banner{
     background-color: #38413f;
     height:240px;
@@ -96,28 +72,9 @@
 }
 
 @media(max-width:750px){
-
-    .hero {
-            flex-direction: column;
-            position: relative;
-            justify-content: center;
-            img {
-                width: 98%;
-                height: 80vh;
-            }
-
-            .heroTitle {
-                width: auto;
-                margin-right: 0;
-                padding-top: 10px;
-                .title {
-                    font-size: 3.5rem;
-                    padding-top: 40px;
-                }
-            }
-            .heroImage{
-                width:100%;
-            }
-        }
+    h1 {
+        font-size: 3rem;
+        padding-right: 0px;
+    }
 
     }

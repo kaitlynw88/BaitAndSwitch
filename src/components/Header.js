@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Link } from 'react-router'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 function Header() {
     const [clicked, setClicked] = useState(false)
     
@@ -11,31 +10,34 @@ function Header() {
         setClicked(!clicked);
     };
 
+    const handleNav = () => {
+        setClicked(false);
+    };
+
   return (
       <header className="navigation">
           <div className="navContainer">
               <nav className="navigationBar">
-                <h1>
-                    Bait and Switch Theatre
-                </h1>
                   <ul className={clicked ? "navBar active" : "navBar"}>
                       <li>
-                          <Link to="/">Home</Link>
+                          <Link to="/" onClick={handleNav}>
+                              Home
+                          </Link>
                       </li>
                       <li>
-                          <Link to="/about">About</Link>
+                          <Link to="/about" onClick={handleNav}>
+                              About Us
+                          </Link>
                       </li>
                       <li>
-                          <Link to="/our-shows">Our Shows</Link>
+                          <Link to="/our-shows" onClick={handleNav}>
+                              Our Shows
+                          </Link>
                       </li>
                       <li>
-                          <a href="https://www.instagram.com/bait.and.switch.co/">
-                              <span className="sr-only">Instagram</span>
-                              <FontAwesomeIcon
-                                  icon={faInstagram}
-                                  onClick={handleClick}
-                              />
-                          </a>
+                          <Link to="/contactus" onClick={handleNav}>
+                              Contact Us
+                          </Link>
                       </li>
                   </ul>
                   <div className="navButtonContainer">
