@@ -9,17 +9,14 @@ function HomePage() {
                   <h1>Bait and Switch Theatre</h1>
               </div>
           </section>
-          <section className="banner">
+          {/* <section className="banner">
               <div className="wrapper">
-                  <h2>Honey Never Spoils</h2>
+                  <h2>No current shows</h2>
                   <h3>
-                      See our show info at{" "}
-                      <a href="https://fringetoronto.com/fringe/show/honey-never-spoils">
-                          FringeToronto.com!
-                      </a>
+                      Come back for more info soon.
                   </h3>
               </div>
-          </section>
+          </section> */}
           <section className="mission">
               <div className="wrapper">
                   <h2 className="subTitle">About Bait and Switch</h2>
